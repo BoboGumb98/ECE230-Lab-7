@@ -28,6 +28,9 @@ the difference between the two is how they handle overflow logic. While the half
 to generate a carry, the half subtractor uses a slightly different AND gate of ~A & B to generate a borrow.
 
 ### 2 - What about the end around carry of One’s Complement makes it hard to use and implement?
-
+  * One's compliment is difficult due to it requiring a two-step addition process where you initially add the inputs & then
+  * adding the carry-out to the LSB (if the carry-out exists). The carry is also difficult to implement due to the circuit
+  * requiring an additional step of returning, which slows everything down.
+    
 ### 3 - What is the edge case and problem with Two’s Complement number representation?
-
+  * 
