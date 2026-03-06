@@ -33,4 +33,5 @@ to generate a carry, the half subtractor uses a slightly different AND gate of ~
   * requiring an additional step of returning, which slows everything down.
     
 ### 3 - What is the edge case and problem with Two’s Complement number representation?
-  * 
+  * Two's complement is asymetric due to 0 being represented as a positive number rather than being negative,
+  * this creates an overflow issue during subtraction.
